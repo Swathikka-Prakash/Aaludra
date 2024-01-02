@@ -16,7 +16,7 @@ button.addEventListener('click',()=>{
 })
 
 function addlist(list){
-    let para = document.createElement('p');
+    let para = document.createElement('li');
     para.innerText = list;
     todolist.appendChild(para)
     localStorage.setItem('lists',JSON.stringify(lists))

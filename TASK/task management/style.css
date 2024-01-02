@@ -1,1 +1,29 @@
+body {
+    background-image: url('1.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+  }
 
+  #container{
+    justify-content: center;
+    left:40%;
+    position:relative;
+    font-size: 20px;
+  }
+  #input{
+    justify-content: center;
+    position: relative;
+    height: 35px;
+    border-radius: 8px;
+    border:transparent;
+    outline:none;
+    font-size: 20px;
+  }
+  #add{
+    border-radius: 8px;
+    position: relative;
+    height:40px;
+    width:100px;
+    top:-3px;
+  }
