@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Task Management</title>
+    <link rel="stylesheet" href="main.css">
+   </head>
+<body>
+<div class="container">
+        <div class="task-app">
+            <h2 style="text-align: center;">Task Management</h2>
+            <div class="row">
+                <input type="text" id="input-box" placeholder="Task name"></div>
+                <button class="btn" onclick="addTask()">Add task</button>
+                    <!-- <label for="reminderTime">Enter Reminder Time:</label> -->
+                    <input type="datetime-local" id="reminderTime" required>
+                    <!-- <button type="button" onclick="setReminder()" id="reminder_btn">Set Reminder</button> -->
+ 
+                </div>
+    <div class="list-container">
+        <table id="taskTable">
+            <thead>
+                <tr>
+                    <th>Task</th>
+                    <th>Reminder Time</th>
+                    <th>Status</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <tbody id="taskTableBody"></tbody>
+        </table>        
+    </div>
+</div>
+    <script src="main.js"></script>
+</body>
+</html>
+

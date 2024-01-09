@@ -1,0 +1,185 @@
+*{
+    margin:auto;
+    padding:auto;
+    box-sizing: border-box;
+    font-family: inter;
+}
+.container{
+    width: 100%;
+    min-height: 100vh;
+    padding:10px;
+    /* background-image: url('D:/Tasks/Task management/task_background.png'); */
+}
+.task-app{
+    width: 100%;
+    max-width: 540px;
+    height: 200px;
+    /* background-color:lightblue; */
+    margin: 100px auto 20px;
+    padding: 40px 30px 70px;
+    border-radius: 10px;
+    border:2px solid black;
+    /* box-shadow: 1px 1px 15px 8px inset dodgerblue; */
+}
+.task-app h2{   
+    color: black;
+    text-align: center;
+    font-size: 30px;
+    margin-bottom: 20px;
+    /* text-shadow: 3px 4px 5px dodgerblue; */
+}
+.row{
+    display: flex;
+    position:relative;
+    /* align-items: center; */
+    /* justify-content: space-between; */
+    /* background-color: lightcyan; */
+    border:1px solid darkgray;
+    border-radius: 10px;
+    left:-37px;
+    margin-bottom: 25px;
+    height: 50px;
+    width: 350px;
+}
+/* .row:hover{
+    box-shadow: 2px 1px 8px dodgerblue;
+} */
+#input-box{
+    border:none;
+    outline: none;
+    position: relative;
+    /* background: transparent; */
+    left: -20px;
+    font-size:15px;
+    width: 290px;
+}
+.btn{
+    position: relative ;
+    border:1px outset;
+    outline: none;
+    background:#243adf;
+    color:white;
+    font-size: 18px;
+    cursor: pointer;
+    border-radius: 10px;
+    top:-87%;
+    width: 100px;
+    height: 50px;
+    left:80%;
+}
+/* .btn:hover{
+    background-color:skyblue;
+    box-shadow: 1px 0px 4px blue; 
+} */
+.list-container{
+    margin-left:20%;
+    align-content: center;
+    text-align: center;
+    width:60%;
+    height:auto;
+    /* background:rgba(53, 163, 236, 0.466); */
+    /* border: 1px solid dodgerblue; */
+    border-radius: 10px;
+}
+ p{
+    font-size: 20px;
+    padding: 12px 8px 12px 50px;
+    user-select:none;
+    cursor: pointer;
+    position: relative;
+    background-color: transparent;
+}
+p:hover{
+    font-size:22px;
+}
+p::before{
+    content: "";
+    position: absolute;
+    height:28px;
+    width:28px;
+    border-radius:50%;
+    /* background-image: url('D:/Tasks/Task management/unchecked.png'); */
+    /* background-size: cover; */
+    background-position: center;
+    top:12px;
+    left:8px;
+}
+p.checked{
+    background-color:rgb(204, 252, 204);
+    border-radius: 10px;
+    /* text-decoration:line-through; */
+}
+p.checked::before{
+    background-image: url('D:/Tasks/Task management/checked-green.png');
+}
+ p span{
+    position:absolute;
+    right:-20%;
+    top:5px;
+    width:60px;
+    height:40px;
+    font-size:20px;
+    color:black;
+    line-height:40px;
+    text-align: center;
+    border-radius: 15%;
+}
+ p span:hover{
+    /* background: skyblue; */
+    border-radius:20%;
+    background: transparent;
+    font-size: 22px;
+    box-shadow: 1px 2px 4px dodgerblue;
+}
+ p div{
+    position:absolute;
+    right:-20%;
+    top:5px;
+    width:50px;
+    height:40px;
+    font-size:20px;
+    color:black;
+    line-height:40px;
+    text-align: center;
+    font-weight: 0;
+    border-radius: 15%;
+    background-color: transparent;
+}
+input#reminderTime{
+    position:relative;
+    top:-87%;
+    right:-51%;
+    width: 20px;
+    height:auto;
+    cursor: pointer;
+    /* background-image: url('D:/Tasks/Task management/calender.png'); */
+}
+/* button#reminder_btn{
+font-size: 15px;
+position:relative;
+top:-20%;
+left:-20%;
+width:100px;
+height:38px;
+border-radius: 8px;
+background-color: rgb(110, 110, 245);
+outline: none;
+border: 1px outset ;
+cursor: pointer;
+} */
+/* 
+#reminder_btn:hover{
+background-color: rgb(100, 39, 241); 
+}*/
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+th, td {
+    text-align:center;
+    border: 1.5px solid rgb(77, 77, 77);
+    padding: 8px;
+    text-align: left;
+}
